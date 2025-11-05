@@ -13,7 +13,7 @@ function Header() {
               <strong className="text-2xl">Ultras</strong>
             </div>
 
-            <div className="text-center flex gap-8 font-serif">
+            <div className="text-center hidden md:flex gap-8 font-serif ">
               <NavLink
                 to="/"
                 className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
@@ -58,7 +58,7 @@ function Header() {
               <IoCartOutline />
 
               {/* hambureger creatio */}
-              <div>
+              <div className="block md:hidden">
                 <IoMenuOutline />
               </div>
             </div>
