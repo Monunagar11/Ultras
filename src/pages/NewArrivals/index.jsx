@@ -1,11 +1,9 @@
+import PageHero from "../../components/ui/PageHero";
+
 function index(){
     return(
         <>
-            <div>
-                <p>
-                    new Arrivals
-                </p>
-            </div>
+            <PageHero />
         </>
     )
 }
