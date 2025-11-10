@@ -1,6 +1,7 @@
 import PageHero from "../../components/ui/PageHero";
 
 import HeroWomens from "../../assets/Images/womens-hero.png"
+import Collections from "../../components/ui/Collections";
 
 function index(){
     const heroData = {
@@ -11,6 +12,7 @@ function index(){
     return(
         <>
         <PageHero data={heroData}/>
+        <Collections />
         </>
     )
 }

@@ -5,7 +5,7 @@ function PageHero({ data }) {
     <>
       <section className="h-full w-full">
         <div className="max-w-7xl m-auto">
-          <div className="md:px-10 md:py-20">
+          <div className="md:px-10 md:py-15">
             <div className="md:pt-20 relative  overflow-hidden">
               <div className="bg-orange-100">
                 <div className="p-5 md:p-10 w-full h-full m-auto ">

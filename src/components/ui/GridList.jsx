@@ -1,10 +1,8 @@
 import React from "react";
-import Product1 from "../../assets/Images/popular-1.jpg";
-import Product2 from "../../assets/Images/popular-2.jpg";
 
 function GridList({ List }) {
   return (
-    <ul className="grid grid-flow-row md:grid-cols-3 lg:grid-cols-4 gap-12 w-full h-full">
+    <ul className="grid grid-flow-row md:grid-cols-3 lg:grid-cols-4 gap-6 h-fit">
       {List.map((item, key) => (
         <li key={key} className="h-full group">
           <div className="w-full h-full">
