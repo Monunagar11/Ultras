@@ -66,9 +66,8 @@ function index(){
                             </div>
                         </div>
                         <div className="md:absolute inset-0 ">
-                                <div className="flex justify-end h-full">
+                                <div className="flex justify-end h-full ">
                                 <img src={ContactImg} alt="" className="object-contain"/>
-
                                 </div>
 
                             </div>
