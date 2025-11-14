@@ -66,59 +66,60 @@ function Header() {
 
               {/* hambureger creatio */}
               <div className="block md:hidden">
-                <button onClick={()=> setMenuOpen(!isMenuOpen)}>
+                <button onClick={() => setMenuOpen(!isMenuOpen)}>
                   <IoMenuOutline />
                 </button>
               </div>
             </div>
           </div>
         </div>
-        { isMenuOpen ? (<div className="absolute top-0 left-0 w-full h-full z-10 fixed">
+        {isMenuOpen ? (
+          <div className="absolute top-0 left-0 w-full h-full z-10 fixed">
             <div className="h-full  flex justify-center items-center">
-            <div className="text-center h-full w-full flex flex-col justify-center items-center gap-8 font-serif bg-white">
-              <NavLink
-                to="/"
-                className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
-              >
-                Home
-              </NavLink>
-              <NavLink
-                to="/newarraivals"
-                className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
-              >
-                New Arraivals
-              </NavLink>
-              <NavLink
-                to="/mens"
-                className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
-              >
-                Mens
-              </NavLink>
-              <NavLink
-                to="/womens"
-                className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
-              >
-                Womens
-              </NavLink>
-              <NavLink
-                to="/shop"
-                className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
-              >
-                Shop
-              </NavLink>
-              <NavLink
-                to="/contact"
-                className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
-              >
-                Contact
-              </NavLink>
+              <div className="text-center h-full w-full flex flex-col justify-center items-center gap-8 font-serif bg-white">
+                <NavLink
+                  to="/"
+                  className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/newarraivals"
+                  className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
+                >
+                  New Arraivals
+                </NavLink>
+                <NavLink
+                  to="/mens"
+                  className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
+                >
+                  Mens
+                </NavLink>
+                <NavLink
+                  to="/womens"
+                  className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
+                >
+                  Womens
+                </NavLink>
+                <NavLink
+                  to="/shop"
+                  className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
+                >
+                  Shop
+                </NavLink>
+                <NavLink
+                  to="/contact"
+                  className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
+                >
+                  Contact
+                </NavLink>
+              </div>
             </div>
-            </div>
-          </div>) : null
-          }
+          </div>
+        ) : null}
       </header>
       {isCartOpen ? (
-        <div className="absolute inset-0 left-0 top-0 z-10 fixed">
+        <div className="absolute inset-0 left-0 top-0 z-20 fixed">
           <div className="relative h-full text-red flex justify-end">
             <div className="w-full h-full bg-black opacity-20 absolute top-0 left-0 "></div>
             <div className="w-full max-w-xl z-10 bg-white">
@@ -128,12 +129,12 @@ function Header() {
                 </div>
                 <div>
                   <button onClick={() => setCartOpen(!isCartOpen)}>
-                    <IoClose />
+                      <IoClose /> 
                   </button>
                 </div>
               </div>
 
-              <div className="h-full flex justify-between flex-col px-3">
+              <div className="h-full flex justify-between flex-col px-3 ">
                 <div className="h-full w-full overflow-hidden">
                   <div className="p-3">
                     <div className="flex">
@@ -181,9 +182,9 @@ function Header() {
                   </div>
                   <div className="w-full mt-5">
                     <div className="w-full py-1 border-1 text-gray-600 hover:bg-black hover:text-white cursor-pointer rounded-full text-center mb-3 transition-all duration-300">
-                      <button className="p-2 text-base  font-medium uppercase">
+                      <NavLink to="/cart" className="p-2 text-base  font-medium uppercase">
                         Go To Cart
-                      </button>
+                      </NavLink>
                     </div>
                     <div className="w-full py-1 rounded-full text-center bg-gray-500">
                       <button className="p-2 text-base text-white font-medium uppercase">
