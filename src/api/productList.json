@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Men's Classic Cotton T-Shirt",
+    "brand": "H&M",
+    "description": "Soft cotton slim-fit t-shirt for everyday wear.",
+    "price": 599,
+    "discount": 10,
+    "rating": 4.3,
+    "category": "Men Clothing",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black", "White", "Navy Blue"],
+    "stock": 85,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Men's Regular Fit Shirt",
+    "brand": "Zara",
+    "description": "Premium cotton shirt with a modern regular fit.",
+    "price": 1499,
+    "discount": 15,
+    "rating": 4.5,
+    "category": "Men Clothing",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Sky Blue", "Grey"],
+    "stock": 42,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Women's Floral Summer Dress",
+    "brand": "Forever 21",
+    "description": "Lightweight floral printed summer dress.",
+    "price": 1799,
+    "discount": 20,
+    "rating": 4.4,
+    "category": "Women Clothing",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Pink", "Yellow"],
+    "stock": 33,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Women's High-Waist Jeans",
+    "brand": "Levi's",
+    "description": "High-waist stretchable denim jeans for women.",
+    "price": 2399,
+    "discount": 10,
+    "rating": 4.6,
+    "category": "Women Clothing",
+    "sizes": ["XS", "S", "M", "L"],
+    "colors": ["Blue", "Black"],
+    "stock": 54,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Men's Joggers Pants",
+    "brand": "Puma",
+    "description": "Comfortable slim-fit joggers for gym and casual use.",
+    "price": 1299,
+    "discount": 18,
+    "rating": 4.2,
+    "category": "Men Clothing",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Black", "Dark Grey"],
+    "stock": 66,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Men's Polo Collar T-Shirt",
+    "brand": "US Polo",
+    "description": "Premium polo collar t-shirt with logo branding.",
+    "price": 1199,
+    "discount": 12,
+    "rating": 4.4,
+    "category": "Men Clothing",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Red", "Blue", "White"],
+    "stock": 72,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Women's Workout Leggings",
+    "brand": "Nike",
+    "description": "Stretchable and breathable leggings for workout.",
+    "price": 1599,
+    "discount": 8,
+    "rating": 4.7,
+    "category": "Women Clothing",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Black", "Purple"],
+    "stock": 40,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Men's Denim Jacket",
+    "brand": "Jack & Jones",
+    "description": "Classic blue denim jacket with a rugged look.",
+    "price": 2999,
+    "discount": 14,
+    "rating": 4.6,
+    "category": "Men Clothing",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Blue"],
+    "stock": 20,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Women's Oversized Hoodie",
+    "brand": "H&M",
+    "description": "Soft oversized hoodie for women with premium feel.",
+    "price": 1999,
+    "discount": 12,
+    "rating": 4.5,
+    "category": "Women Clothing",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Cream", "Black"],
+    "stock": 44,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Women's Crop Top",
+    "brand": "Forever 21",
+    "description": "Trendy crop top perfect for casual outings.",
+    "price": 699,
+    "discount": 25,
+    "rating": 4.2,
+    "category": "Women Clothing",
+    "sizes": ["XS", "S", "M"],
+    "colors": ["White", "Peach"],
+    "stock": 60,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Men's Slim Fit Jeans",
+    "brand": "Levi's",
+    "description": "Durable and stylish slim-fit denim jeans.",
+    "price": 2499,
+    "discount": 20,
+    "rating": 4.7,
+    "category": "Men Clothing",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black", "Blue"],
+    "stock": 51,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Men's Gym Tank Top",
+    "brand": "Decathlon",
+    "description": "Sweat-resistant tank top perfect for workouts.",
+    "price": 499,
+    "discount": 5,
+    "rating": 4.1,
+    "category": "Men Clothing",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Black", "Blue"],
+    "stock": 75,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Women's Denim Shorts",
+    "brand": "Zara",
+    "description": "Casual denim shorts for daily wear.",
+    "price": 1299,
+    "discount": 18,
+    "rating": 4.3,
+    "category": "Women Clothing",
+    "sizes": ["S", "M"],
+    "colors": ["Light Blue"],
+    "stock": 29,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Women's Winter Sweater",
+    "brand": "Mango",
+    "description": "High-quality woolen sweater for winter season.",
+    "price": 2199,
+    "discount": 15,
+    "rating": 4.6,
+    "category": "Women Clothing",
+    "sizes": ["M", "L"],
+    "colors": ["Beige", "Brown"],
+    "stock": 31,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Men's Sports Shorts",
+    "brand": "Adidas",
+    "description": "Lightweight shorts ideal for running and training.",
+    "price": 999,
+    "discount": 10,
+    "rating": 4.4,
+    "category": "Men Clothing",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Black", "Grey"],
+    "stock": 63,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Women's Kurti",
+    "brand": "W for Woman",
+    "description": "Printed cotton kurti perfect for ethnic wear.",
+    "price": 1199,
+    "discount": 20,
+    "rating": 4.5,
+    "category": "Women Clothing",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Green", "Pink"],
+    "stock": 48,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Men's Sweatshirt",
+    "brand": "Roadster",
+    "description": "Warm and stylish sweatshirt for winters.",
+    "price": 1399,
+    "discount": 22,
+    "rating": 4.3,
+    "category": "Men Clothing",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Olive", "Black"],
+    "stock": 57,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Women's Palazzo Pants",
+    "brand": "Biba",
+    "description": "Soft and breathable palazzo pants for ethnic look.",
+    "price": 999,
+    "discount": 12,
+    "rating": 4.4,
+    "category": "Women Clothing",
+    "sizes": ["S", "M", "L"],
+    "colors": ["White", "Maroon"],
+    "stock": 38,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Men's Formal Trousers",
+    "brand": "Arrow",
+    "description": "Classic formal trousers for office wear.",
+    "price": 1899,
+    "discount": 10,
+    "rating": 4.5,
+    "category": "Men Clothing",
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Black", "Navy"],
+    "stock": 22,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Women's Cotton Top",
+    "brand": "Max Fashion",
+    "description": "Lightweight cotton top ideal for summer.",
+    "price": 699,
+    "discount": 15,
+    "rating": 4.2,
+    "category": "Women Clothing",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Blue", "White"],
+    "stock": 50,
+    "images": [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ]
+  }
+]

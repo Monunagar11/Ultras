@@ -3,10 +3,18 @@ import { IoClose, IoMenuOutline, IoSearch } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import CartMenu from "../ui/CartMenu";
+import { useDispatch, useSelector } from "react-redux";
 
 function Header() {
   const [isCartOpen, setCartOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const cart = useSelector((state)=>state.cart.cartItems);
+  const dispatch = useDispatch();
+
+  const handleMenuClose = ()=>{
+    setMenuOpen(!isMenuOpen)
+  }
+
   return (
     <>
       <header className="w-full h-full static">
@@ -61,7 +69,7 @@ function Header() {
               <IoSearch />
               {/* cart button */}
               <button onClick={() => setCartOpen(!isCartOpen)}>
-                <IoCartOutline />
+                <IoCartOutline /> 
               </button>
 
               {/* hambureger creatio */}
@@ -73,42 +81,44 @@ function Header() {
             </div>
           </div>
         </div>
+
+        {/* mobile responsive menu */}
         {isMenuOpen ? (
           <div className="absolute top-0 left-0 w-full h-full z-10 fixed">
             <div className="h-full  flex justify-center items-center">
               <div className="text-center h-full w-full flex flex-col justify-center items-center gap-8 font-serif bg-white">
                 <NavLink
-                  to="/"
+                  to="/" onClick={handleMenuClose}
                   className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
                 >
                   Home
                 </NavLink>
                 <NavLink
-                  to="/newarraivals"
+                  to="/newarraivals"  onClick={handleMenuClose}
                   className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
                 >
                   New Arraivals
                 </NavLink>
                 <NavLink
-                  to="/mens"
+                  to="/mens"  onClick={handleMenuClose}
                   className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
                 >
                   Mens
                 </NavLink>
                 <NavLink
-                  to="/womens"
+                  to="/womens"  onClick={handleMenuClose}
                   className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
                 >
                   Womens
                 </NavLink>
                 <NavLink
-                  to="/shop"
+                  to="/shop"  onClick={handleMenuClose}
                   className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
                 >
                   Shop
                 </NavLink>
                 <NavLink
-                  to="/contact"
+                  to="/contact"  onClick={handleMenuClose}
                   className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.25 hover:after:w-full after:transition-all after:duration-300 after:bg-black"
                 >
                   Contact
@@ -129,7 +139,9 @@ function Header() {
                 </div>
                 <div>
                   <button onClick={() => setCartOpen(!isCartOpen)}>
-                      <IoClose /> 
+                      
+                       <IoClose /> 
+                      
                   </button>
                 </div>
               </div>

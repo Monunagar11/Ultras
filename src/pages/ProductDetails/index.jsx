@@ -1,6 +1,11 @@
-import React from 'react'
-import FeatureCollection from '../../components/ui/FeatureCollection';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+import { ADD_TO_CART } from '../../features/Cart/cartSlice';
+
 import Collections from "../../components/ui/Collections";
+import productList from "../../api/productList.json"
+import FeatureCollection from '../../components/ui/FeatureCollection';
 
 import Popular1 from "../../assets/Images/popular-1.jpg";
 import Popular2 from "../../assets/Images/popular-1-1.jpg";
@@ -11,7 +16,59 @@ import Popular5 from "../../assets/Images/popular-1-4.jpg";
 import Premimum from "../../assets/Images/premimum-img.jpg";
 
 
+
 function index() {
+    const [product, setProduct] = useState(null);
+    const [color, setColor] = useState(null);
+    const [size, setSize] = useState(null);
+    const [quantity, setQuantity] = useState(1);
+    const items = useSelector((state)=>state.cart.cartItems)
+    const dispatch = useDispatch();
+
+    const param = useParams();
+    console.log(param.id)
+    
+    useEffect(()=>
+    setProduct(()=>
+    productList.find(items=>items.id == param.id))
+,[])
+console.log(product?.images[0])
+
+
+    const colorList = [
+        {
+            Id : 1,
+            name: "Black"
+        },
+        {
+            Id : 2,
+            name: "White"
+        },
+        {
+            Id : 3,
+            name: "Brown"
+        }
+    ]
+
+    const sizeList = [
+        {
+            Id: 1,
+            num: "s"
+        },
+        {
+            Id : 2,
+            num : "M"
+        },
+        {
+            Id : 3,
+            num : "xl"
+        },
+        {
+            Id : 4,
+            num : "xxl"
+        }
+    ]
+
   return (
     <>
         {/* Product details  */}
@@ -55,33 +112,72 @@ function index() {
                             <div>
                                 {/* product name  */}
                                 <div className='mb-5'>
-                                    <h1 className='text-5xl font-serif'>Ridge knit jacket</h1>
+                                    <h1 className='text-5xl font-serif'>{product?.name}</h1>
                                 </div>
                                 {/* stock quantity */}
                                 <div className='mb-5'>
-                                    <p className='text-green-500'>12 in Stock</p>
+                                    <p className='text-green-500'>{product?.stock} in Stock</p>
                                 </div>
 
                                 {/* product discription */}
                                 <div className='mb-5'>
                                     <p>
-                                        Experience the perfect blend of style and comfort with the Ridge Knit Jacket. Designed with a modern fit, this versatile jacket features premium knit fabric for exceptional warmth and durability. Whether you're heading out for a casual outing or layering up for cooler days, the Ridge Knit Jacket is your go-to choice for effortless fashion.
+                                        {product?.description}
+                                        {/* Experience the perfect blend of style and comfort with the Ridge Knit Jacket. Designed with a modern fit, this versatile jacket features premium knit fabric for exceptional warmth and durability. Whether you're heading out for a casual outing or layering up for cooler days, the Ridge Knit Jacket is your go-to choice for effortless fashion. */}
                                     </p>
                                 </div>
                                 {/* product price  */}
                                 <div className='mb-5 pb-5 border-b-2 border-gray-400'>
-                                    <h3 className='text-3xl'>$84 
+                                    <h3 className='text-3xl'>${product?.price - product?.discount}
                                         <span className='line-through text-gray-500 ml-5 text-lg'>
-                                            $94
+                                            ${product?.price}
                                         </span>
                                     </h3>
                                     
+                                </div>
+                                {/* select color for product section */}
+                                <div className='my-5'>
+                                    <h3 className='font-medium'>Colors :</h3>
+                                    <div className='flex gap-3 mt-2'>
+                                        {product?.colors.map((c)=>
+                                            <button  className="uppercase px-3 py-1 border rounded-full">{c}</button>
+                                        )
+                                        }
+                                    </div>
+                                </div>
+
+                                {/* select size for product section */}
+                                <div className='my-5'>
+                                    <h3 className='font-medium'>Colors :</h3>
+                                    <div className='flex gap-3 mt-2'>
+                                        {product?.sizes.map((s)=>
+                                            <button className="uppercase px-6 py-1 border rounded-full">{s}</button>
+                                        )
+                                        }
+                                    </div>
+                                </div>
+                                
+                                {/* select qunatity for product section */}
+                                <div className='my-5'>
+                                    <h3 className='font-medium'>Quantity :</h3>
+                                    <div className='flex gap-5 w-fit items-center mt-2 border rounded-full px-8 py-1'>
+                                        <button onClick={()=>setQuantity((prev)=>prev-=1)} className={``}>-</button>
+                                        {quantity}
+                                        <button onClick={()=>setQuantity((prev)=>prev+=1)}>+</button>
+                                    </div>
                                 </div>
                                 <div>
 
                                     {/* add to cart button */}
                                     <div className='w-full text-center rounded-full bg-black text-white'>
-                                        <button className='uppercase py-2 text-base'>Add to Cart</button>
+                                        <button className='uppercase py-2 text-base' onClick={()=>dispatch(ADD_TO_CART({
+                                            cartId :1,
+            productID : 2,
+            productName : "shirt",
+            color : "green",
+            size : "xl",
+            price : "85",
+            quantity : 3}))}>Add to Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -100,10 +196,10 @@ function index() {
         <FeatureCollection />
 
         {/* Premimum sweater section */}
-        <section className='w-full  bg-orange-200'>
+        <section className='w-full bg-orange-200'>
             <div className='max-w-7xl m-auto'>
                 <div className=''>
-                    <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
+                    <div className='flex h-full flex-col md:flex-row justify-between items-center gap-10'>
                         <div className='w-full md:w-1/2 md:pr-40 '>
                             <div className='mb-5'>
                                 <h2 className='text-5xl'>
@@ -121,7 +217,7 @@ function index() {
                             </div>
 
                         </div>
-                        <div className='w-full md:w-1/2 h-full object-center'>
+                        <div className='w-full md:w-1/2 object-center'>
                             <img src={Premimum} alt="premimum image" className='object-cover'/>
 
                         </div>

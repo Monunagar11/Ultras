@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import GridList from './GridList';
+import productList from '../../api/productList.json'
 
 import Popular1 from "../../assets/Images/Popular-1.jpg";
 import Popular2 from "../../assets/Images/popular-2.jpg";
@@ -66,7 +67,7 @@ function Collections() {
                     </button>
                 </div>
 
-                <GridList List={CollectionList}/>
+                <GridList List={productList}/>
 
             </div>
 

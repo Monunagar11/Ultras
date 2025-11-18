@@ -45,7 +45,7 @@ function App() {
           element : <Cart />
         },
         {
-          path: "/product",
+          path: "/product/:id",
           element: <Product />,
         },
       ],
