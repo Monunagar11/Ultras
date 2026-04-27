@@ -93,28 +93,46 @@ function index() {
   const PopularProducts = [
     {
       id: 1,
-      imageUrl: Popular1,
+      images: [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ],
       title: "Ridge knit jacket",
       type: "Sport Jackets",
       price: "85",
     },
     {
       id: 2,
-      imageUrl: Popular2,
+      imageUrl: [Popular2],
       title: "Adventure Ready Boys’ Sweater",
       type: "Sweaters",
       price: "45",
     },
     {
-      id: 1,
-      imageUrl: Popular3,
+      id: 2,
+      images: [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ],
       title: "Pure Whimsy Baby Tee",
       type: "T-Shirts",
       price: "32",
     },
     {
-      id: 1,
-      imageUrl: Popular4,
+      id: 3,
+      images: [
+      "../../assets/Images/popular-1.jpg",
+      "../../assets/Images/popular-1-1.jpg",
+      "../../assets/Images/popular-1-2.jpg",
+      "../../assets/Images/popular-1-3.jpg",
+      "../../assets/Images/popular-1-4.jpg"
+    ],
       title: "Ultimate Comfort FlexFit Leggings",
       type: "Leggings",
       price: "32",
@@ -242,7 +260,7 @@ function index() {
             <div className="py-4 md:py-8 text-3xl md:text-5xl tracking-tight font-mono">
               <h2>Popular Products</h2>
             </div>
-            <GridList List={PopularProducts} />
+            {/* <GridList List={PopularProducts} /> */}
           </div>
         </div>
       </section>
